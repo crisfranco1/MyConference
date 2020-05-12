@@ -10,11 +10,10 @@
     <ImageView
         android:id="@+id/imageViewLogoSplashScreen"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/logoSplashScreenHeight"
+        android:layout_height="@dimen/splashScreenImageViewHeight"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:srcCompat="@drawable/logo_splash_screen" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

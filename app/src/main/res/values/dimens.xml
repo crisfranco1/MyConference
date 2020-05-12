@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="logoSplashScreenHeight">45dp</dimen>
+    <dimen name="splashScreenImageViewHeight">45dp</dimen>
+    <dimen name="mainImageViewToolbarHeight">30dp</dimen>
+    <dimen name="homeCardViewCornerRadius">4dp</dimen>
+    <dimen name="homeImageViewHeight">150dp</dimen>
+    <dimen name="homeTextViewTitleSize">20sp</dimen>
+    <dimen name="homeTextViewMargin">10dp</dimen>
+    <dimen name="homeTextViewDescriptionSize">15sp</dimen>
 </resources>
