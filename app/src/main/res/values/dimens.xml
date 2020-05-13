@@ -7,4 +7,6 @@
     <dimen name="homeTextViewTitleSize">20sp</dimen>
     <dimen name="homeTextViewMargin">10dp</dimen>
     <dimen name="homeTextViewDescriptionSize">15sp</dimen>
+    <dimen name="scheduleItemTextViewHourSize">30sp</dimen>
+    <dimen name="scheduleItemTextViewAmPmSize">20sp</dimen>
 </resources>
