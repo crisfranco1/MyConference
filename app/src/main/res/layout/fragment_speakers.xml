@@ -3,8 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.speakers.SpeakersFragment">
+    tools:context=".view.schedule.ScheduleFragment">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSpeakers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
+    <RelativeLayout
+        android:id="@+id/relativeLayoutLoadingSpeakers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="@color/colorPrimary" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
 </FrameLayout>
