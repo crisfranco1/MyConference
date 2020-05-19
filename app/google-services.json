@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1057781991639",
+    "firebase_url": "https://my-conference-ad1f0.firebaseio.com",
+    "project_id": "my-conference-ad1f0",
+    "storage_bucket": "my-conference-ad1f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057781991639:android:9b559433a5dea4d75b4892",
+        "android_client_info": {
+          "package_name": "com.crisfranco.myconference"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057781991639-t3i9varmdjjraaden4j018cjv6md76fc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crisfranco.myconference",
+            "certificate_hash": "728423be11dc88e63f0c6dea538b703d6cb79af4"
+          }
+        },
+        {
+          "client_id": "1057781991639-ianmpg0oelqgf6qo83ekkin8jnvvndno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATd0gZu6tAkQZ_vFoyavkXLIFaAhXHWlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057781991639-ianmpg0oelqgf6qo83ekkin8jnvvndno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

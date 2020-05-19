@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/iHome">
+    <fragment
+        android:id="@+id/iHome"
+        android:name="com.crisfranco.myconference.view.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_scheduleFragment"
+            app:destination="@+id/iSchedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/iSchedule"
+        android:name="com.crisfranco.myconference.view.schedule.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule">
+        <action
+            android:id="@+id/action_scheduleFragment_to_speakersFragment"
+            app:destination="@+id/iSpeakers" />
+        <action
+            android:id="@+id/action_iSchedule_to_dConferenceDetail"
+            app:destination="@id/dConferenceDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/iSpeakers"
+        android:name="com.crisfranco.myconference.view.speakers.SpeakersFragment"
+        android:label="fragment_speakers"
+        tools:layout="@layout/fragment_speakers">
+        <action
+            android:id="@+id/action_speakersFragment_to_locationFragment"
+            app:destination="@+id/iLocation" />
+        <action
+            android:id="@+id/action_iSpeakers_to_dSpeakerDetail"
+            app:destination="@id/dSpeakerDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/iLocation"
+        android:name="com.crisfranco.myconference.view.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location">
+        <action
+            android:id="@+id/action_iLocation_to_dLocationDetail"
+            app:destination="@id/dLocationDetail" />
+    </fragment>
+    <dialog
+        android:id="@+id/dConferenceDetail"
+        android:name="com.crisfranco.myconference.view.schedule.ConferenceDetailDialogFragment"
+        android:label="fdConferenceDetail"
+        tools:layout="@layout/fragment_conference_detail_dialog" />
+    <dialog
+        android:id="@+id/dSpeakerDetail"
+        android:name="com.crisfranco.myconference.view.speakers.SpeakerDetailDialogFragment"
+        android:label="fdSpeakerDetail"
+        tools:layout="@layout/fragment_speaker_detail_dialog" />
+    <dialog
+        android:id="@+id/dLocationDetail"
+        android:name="com.crisfranco.myconference.view.location.LocationDetailDialogFragment"
+        android:label="fdLocationDetail"
+        tools:layout="@layout/fragment_location_detail_dialog" />
+</navigation>

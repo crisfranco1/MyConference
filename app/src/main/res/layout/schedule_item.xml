@@ -64,12 +64,13 @@
 
             <TextView
                 android:id="@+id/textViewScheduleItemConferenceTopic"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:lines="1"
                 android:text="Topic"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_topic"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

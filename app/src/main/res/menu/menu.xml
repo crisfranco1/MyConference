@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/iHome"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"></item>
+
+    <item
+        android:id="@+id/iSchedule"
+        android:icon="@drawable/ic_schedule"
+        android:title="Cronograma"></item>
+
+    <item
+        android:id="@+id/iSpeakers"
+        android:icon="@drawable/ic_speakers"
+        android:title="Expositores"></item>
+
+    <item
+        android:id="@+id/iLocation"
+        android:icon="@drawable/ic_map"
+        android:title="Ubicación"></item>
+</menu>
