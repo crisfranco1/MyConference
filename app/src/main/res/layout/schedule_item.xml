@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textViewScheduleItemHour"
+                android:id="@+id/tvConferenceHour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right|bottom"
@@ -26,7 +26,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textViewScheduleItemAmPm"
+                android:id="@+id/tvConferenceAmPm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right|top"
@@ -43,7 +43,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textViewScheduleItemConferenceTitle"
+                android:id="@+id/tvConferenceTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
@@ -53,7 +53,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textViewScheduleItemConferenceSpeaker"
+                android:id="@+id/tvConferenceSpeaker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
@@ -63,7 +63,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/textViewScheduleItemConferenceTopic"
+                android:id="@+id/tvConferenceTopic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"

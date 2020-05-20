@@ -6,7 +6,7 @@
     app:startDestination="@+id/iHome">
     <fragment
         android:id="@+id/iHome"
-        android:name="com.crisfranco.myconference.view.home.HomeFragment"
+        android:name="com.crisfranco.myconference.view.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/iSchedule"
-        android:name="com.crisfranco.myconference.view.schedule.ScheduleFragment"
+        android:name="com.crisfranco.myconference.view.fragments.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule">
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/iSpeakers"
-        android:name="com.crisfranco.myconference.view.speakers.SpeakersFragment"
+        android:name="com.crisfranco.myconference.view.fragments.SpeakersFragment"
         android:label="fragment_speakers"
         tools:layout="@layout/fragment_speakers">
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/iLocation"
-        android:name="com.crisfranco.myconference.view.location.LocationFragment"
+        android:name="com.crisfranco.myconference.view.fragments.LocationFragment"
         android:label="fragment_location"
         tools:layout="@layout/fragment_location">
         <action
@@ -48,17 +48,17 @@
     </fragment>
     <dialog
         android:id="@+id/dConferenceDetail"
-        android:name="com.crisfranco.myconference.view.schedule.ConferenceDetailDialogFragment"
+        android:name="com.crisfranco.myconference.view.fragments.ConferenceDetailDialogFragment"
         android:label="fdConferenceDetail"
         tools:layout="@layout/fragment_conference_detail_dialog" />
     <dialog
         android:id="@+id/dSpeakerDetail"
-        android:name="com.crisfranco.myconference.view.speakers.SpeakerDetailDialogFragment"
+        android:name="com.crisfranco.myconference.view.fragments.SpeakerDetailDialogFragment"
         android:label="fdSpeakerDetail"
         tools:layout="@layout/fragment_speaker_detail_dialog" />
     <dialog
         android:id="@+id/dLocationDetail"
-        android:name="com.crisfranco.myconference.view.location.LocationDetailDialogFragment"
+        android:name="com.crisfranco.myconference.view.fragments.LocationDetailDialogFragment"
         android:label="fdLocationDetail"
         tools:layout="@layout/fragment_location_detail_dialog" />
 </navigation>

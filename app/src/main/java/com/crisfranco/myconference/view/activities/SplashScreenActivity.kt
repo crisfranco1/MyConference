@@ -1,4 +1,4 @@
-package com.crisfranco.myconference.view.splashscreen
+package com.crisfranco.myconference.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
