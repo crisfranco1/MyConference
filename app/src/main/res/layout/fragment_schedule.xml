@@ -6,15 +6,16 @@
     tools:context=".view.fragments.ScheduleFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewConferences"
+        android:id="@+id/rvConferences"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <RelativeLayout
+        android:id="@+id/rlSchedule"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <view
+        <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alpha="0.4"

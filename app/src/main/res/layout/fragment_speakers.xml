@@ -6,16 +6,16 @@
     tools:context=".view.fragments.SpeakersFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewSpeakers"
+        android:id="@+id/rvSpeakers"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <RelativeLayout
-        android:id="@+id/relativeLayoutLoadingSpeakers"
+        android:id="@+id/rlLoadingSpeakers"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <view
+        <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alpha="0.4"

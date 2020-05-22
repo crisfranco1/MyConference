@@ -33,7 +33,7 @@ class SpeakersItemAdapter(val speakersItemListener: SpeakersItemListener) :
             .apply(RequestOptions.circleCropTransform()).into(holder.ivSpeakersItemImage)
 
         holder.tvSpeakersItemFullName.text = speaker.name
-        holder.tvSpeakersItemJobTitle.text = speaker.image
+        holder.tvSpeakersItemJobTitle.text = speaker.jobtitle
 
         holder.itemView.setOnClickListener() {
             speakersItemListener.onSpeakerClicked(speaker, position)

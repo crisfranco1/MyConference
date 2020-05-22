@@ -1,12 +1,13 @@
 package com.crisfranco.myconference.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.crisfranco.myconference.model.Conference
 import com.crisfranco.myconference.network.Callback
 import com.crisfranco.myconference.network.FirestoreService
 import java.lang.Exception
 
-class ScheduleViewModel {
+class ScheduleViewModel : ViewModel() {
 
     private val firestoreService = FirestoreService()
     var conferences: MutableLiveData<List<Conference>> = MutableLiveData()
