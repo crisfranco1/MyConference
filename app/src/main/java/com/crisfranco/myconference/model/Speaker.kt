@@ -1,6 +1,8 @@
 package com.crisfranco.myconference.model
 
-class Speaker {
+import java.io.Serializable
+
+class Speaker : Serializable {
     var name = ""
     var jobtitle = ""
     var workplace = ""

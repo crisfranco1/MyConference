@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBqWfxUT7N-CXIgwNXNvLLhlrT8TcDNl2k" />
+
         <activity android:name=".view.activities.SplashScreenActivity"></activity>
         <activity android:name=".view.activities.MainActivity">
             <intent-filter>
