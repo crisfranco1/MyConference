@@ -13,14 +13,12 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBqWfxUT7N-CXIgwNXNvLLhlrT8TcDNl2k" />
 
-        <activity android:name=".view.activities.SplashScreenActivity"></activity>
-        <activity android:name=".view.activities.MainActivity">
+        <activity android:name=".view.activities.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.activities.MainActivity"></activity>
     </application>
-
 </manifest>
