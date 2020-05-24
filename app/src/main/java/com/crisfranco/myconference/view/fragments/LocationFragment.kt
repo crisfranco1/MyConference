@@ -1,17 +1,25 @@
 package com.crisfranco.myconference.view.fragments
 
+import android.graphics.Bitmap
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 
 import com.crisfranco.myconference.R
+import com.crisfranco.myconference.model.Location
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.*
 
-class LocationFragment : Fragment(), OnMapReadyCallback {
+
+class LocationFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,6 +35,33 @@ class LocationFragment : Fragment(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
     }
 
-    override fun onMapReady(p0: GoogleMap?) {}
+    override fun onMapReady(googleMap: GoogleMap?) {
+
+        val location = Location()
+
+        val zoom = 16f
+        val centerMap = LatLng(location.latitude, location.longitude)
+        googleMap?.animateCamera(CameraUpdateFactory.newLatLngZoom(centerMap, zoom))
+
+        val centerMark = LatLng(location.latitude, location.longitude)
+        val markerOptions = MarkerOptions()
+        markerOptions.position(centerMark)
+        markerOptions.title("Platzi Conf 2020")
+        val bitmapDraw = context?.applicationContext?.let {
+            ContextCompat.getDrawable(it, R.drawable.logo_platzi)
+        } as BitmapDrawable
+        val smallMarker = Bitmap.createScaledBitmap(bitmapDraw.bitmap, 150, 150, false)
+        markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker))
+        googleMap?.addMarker(markerOptions)
+
+        googleMap?.setOnMarkerClickListener(this)
+
+        googleMap?.setMapStyle(MapStyleOptions.loadRawResourceStyle(context, R.raw.custom_map))
+    }
+
+    override fun onMarkerClick(p0: Marker?): Boolean {
+        findNavController().navigate(R.id.dLocationDetail)
+        return true
+    }
 
 }
